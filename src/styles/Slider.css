@@ -19,7 +19,7 @@
     font-size: 18px;
     width: 6.25vw;
     height: 6.25vw;
-    border-radius: unset !important;
+    border-radius: unset ;
     /* aspect-ratio: 1; */
     background-color: var(--bgColor-main);
     border: 1px solid var(--color-line-bg);

@@ -70,13 +70,17 @@ p {
     transition:2s cubic-bezier(0.900, 0.020, 0.295, 1.100);
     transition-delay:1.5 ;
 }
+.skew-missionPrimary-text h3.is-reveal {
+    transform: rotate(-90deg) translate(-70%, -125%);
+    transition:1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
+}
 .skew-misson-text h3.is-reveal {
-    transform: rotate(-90deg) translate(55%, -125%);
+    transform: rotate(-90deg) translate(20%, -125%);
     transition:1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
 }
 .skew-name-partners h3.is-reveal {
     transition-delay: 1s;
-    transform: rotate(-90deg) translate(6%, -125%);
+    transform: rotate(-90deg) translate(40%, -125%);
     transition:1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
 }
 #img-partner-product img{
@@ -146,7 +150,7 @@ p {
     .partner-itemgird {
         grid-column-start: 1!important;
         grid-column-end: 9!important;
-        padding: 0 20px!important;
+        /* padding: 0 20px!important; */
     }
     .wraper-partner-section  div.text-skew {
         grid-column-start: 1!important;
@@ -159,8 +163,11 @@ p {
     padding: 0 20px!important;
     }
     .partner-itemgird--logo {
-        width: 33%!important;
+
         padding-right: 20px!important;
+    width: 33.333vw!important;
+    height: 33.333vw !important;
+    left: 83.33% !important;
     }
     .partner-itemgird--detailcompany {
         left: 50%!important;
@@ -201,12 +208,16 @@ p {
 
 
     .slideshow-section-slider-img {
-        grid-column-start: 2 !important;
-        width: 66.6666vw!important;
+       
     }
     .section-slider-img button {
+        height: 16.666vw!important;
         width: 16.666vw!important;
-        width: 16.666vw!important;
+        border-radius: 50%!important;
+    }
+    .section-slider-img button.nextButton svg, .section-slider-img button.prevButton svg {
+        width: 70px!important;
+        height: 70px!important;
     }
     .section-slider-img button.nextButton{
         grid-column: 6!important;

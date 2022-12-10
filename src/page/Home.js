@@ -12,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img02 from '../asset/demo-img/02.jpg'
 import img15 from '../asset/demo-img/15.png'
 import img12 from '../asset/demo-img/12.png'
-
+import img21 from '../asset/demo-img/21.png'
 
 import Navbar from ".././component/Navbar";
 import Footer from ".././component/Footer";
@@ -44,14 +44,14 @@ function Home() {
       y: 0,
       opacity: 1,
       stagger: 0.1,
-      ease: "power2"
+      ease: Power3.easeOut
     });
     gsap.to("#image01BannerChildren",{
-      delay: 2, // trừ cho <Navbar/> action
-      duration: 1,
+      delay: 1.5, // trừ cho <Navbar/> action
+      duration: '500ms',
       clipPath: 'inset(0% 0% 0% 0%)',
       webkitClipPath:'inset(0% 0% 0% 0%)',
-      ease: "power2"
+      ease: Power3.easeIn
     })
   });
 
@@ -117,37 +117,54 @@ function Home() {
               <img id="image01BannerChildren" src={img15} alt=''/>
             </div>
             <div className='item-grid-content-text custom01'>
-              <p id="text01BannerChildren">LBT Imports Pty Ltd is a Melbourne based wine exporter, wholesaler and agent</p>
+              <p id="text01BannerChildren">Established in 2019. LBT Imports Pty Ltd is a Melbourne-based wine exporter, wholesaler, and agent.</p>
             </div>
             <div className='item-grid-content-text custom02'>
-              <p id="text02BannerChildren">Drawing on many years in fine wine business, founder Long Tran was convinced of the increasing popularity of Australian wines and established LBT Imports in 2019 to focus on introducing quality Australian wines to Vietnam, which is a new and upcoming market with lots of potentials.
+              <p id="text02BannerChildren">Drawing on many years in fine wine business, founder Long Tran was convinced of the increasing popularity of Australian wines and established LBT Imports in 2019 to focus on introducing quality Australian wines to Vietnam, which is a new and upcoming market with lots of potential.
               </p>
             </div>
           </div>
         
-          <div className='grid-wrapper wraper-mission-section' data-scroll-section style={{marginTop:'5vw'}}>
-            <div className='mission-section' style={{ backgroundImage: `url(${img12})`, backgroundSize: "cover" }}>
-              <div className='mission-section-content'>
-                Our mission is to continue our growth and provide our clients with a diverse range of excellent quality products and to assist small to medium boutique wineries export branded wine
+          <div className='grid-wrapper wraper-mission-section' data-scroll-section style={{paddingTop:'5vw'}}>
+            <div className='mission-section'>
+            <img src={img12} alt='' data-scroll data-scroll-speed="-2"/>
+              <div className='mission-section-content' >
+              Our mission is to continue our growth and provide our clients with a diverse range of excellent quality products and to assist small to medium-boutique wineries export branded wine. We are always on the lookout for partners that are eager to enter into new and existing markets. 
               </div>
             </div>
             <div className='text-skew skew-misson-text'>
-              <h3 data-scroll>Mission</h3>
+              <h3 data-scroll>Our&nbsp;Mission</h3>
             </div>
 
           </div>
-
+          <div className='grid-wrapper wraper-vison-section'  data-scroll-section>
+            <div className='vision-text-section'>
+              <div>
+              <p>We believe good collaborations and communication between supplier and exporter as well as importer and client are crucial for success in our markets.</p>
+             <p>In partnership with our suppliers to which we are their exclusive exporter and distributor, we seek to expand our exportation services and become a leading player in the Asian markets, especially new young markets with huge potential such as that of Vietnam.</p>
+              </div>
+              
+              
+            </div>
+            <div className='vision-img-section'>
+              <img src={img21} alt='' data-scroll data-scroll-speed="2"/>
+            </div>
+            <div className='skew-vision-text'>
+              <h3>Our&nbsp;Vision</h3>
+            </div>
+          </div>
 
           <div className='grid-wrapper wraper-missionPrimary-section' data-scroll-section>
-            <div className='missionPrimary-section' style={{ backgroundImage: `url(${img02})`, backgroundSize: "cover" }}>
+            <div className='missionPrimary-section'>
+              <img src={img02} alt='' data-scroll data-scroll-speed="-1" />
               <div className='missionPrimary-section-content'>
               In partnership with our suppliers to which we are their exclusive exporter and distributor, we seek to expand our exportation services and become a leading player in the Asian markets especially new young market with huge potentials such as that of Vietnam.
-
+           
               </div>
             </div>
-{/*             <div className='text-skew skew-missionPrimary-text'>
-              <h3 data-scroll>Mission</h3>
-            </div> */}
+            <div className='skew-missionPrimary-text'>
+              <h3 data-scroll>Our&nbsp;Brands</h3>
+            </div>
           </div>
 
           <div className='grid-wrapper-heading' data-scroll-section>
@@ -175,7 +192,7 @@ function Home() {
             </div>
 
             <div className='text-skew skew-name-partners'>
-              <h3 data-scroll>Berton&nbsp;Vineyard</h3>
+              <h3 data-scroll  >Berton&nbsp;Vineyard</h3>
             </div>
           </div>
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
@@ -189,14 +206,14 @@ function Home() {
               </div>
               <SliderProduct nameBrand={'Dominic'}/>
               <div className='partner-itemgird--detailcompany'>
-                <h3>Dominic Wines</h3>
+                <h3 >Dominic Wines</h3>
 
                 <p>Dominic Wines products – drawing on fruit from the company’s Riverland vineyards and complemented by grapes from 42 dedicated growers across South Australia – can be found in the UK, across Europe and in Canada and China.</p>
                 <Link to='./partners' >Explore more!</Link>
               </div>
             </div>
             <div className='text-skew skew-name-partners'>
-              <h3 data-scroll>Dominic&nbsp;Wines</h3>
+              <h3 data-scroll  >Dominic&nbsp;Wines</h3>
             </div>
             
           </div>

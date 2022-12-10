@@ -92,12 +92,12 @@ export default function Navbar() {
     });
   
     gsap.to('#navbar-logo-foranimation' ,{
-      delay: 1,
+      delay: .5,
       duration: 1,
       opacity: 1
     });
     gsap.to(split.lines, {
-      delay: 1.5,
+      delay: .5,
       duration: 1,
       y: 0,
       opacity: 1,
@@ -112,11 +112,11 @@ export default function Navbar() {
       <div className="nav-header">
         <Link to="/"><img id="navbar-logo-foranimation" src={LogoLBTCompany} alt="Logo LBT Company" /></Link>
       </div>
-      <div className="nav-btn">
+   {/*    <div className="nav-btn">
         <button className='btn-open-modal-menu' onClick={openMenuAll}>
           <FaGripLines />
         </button>
-      </div>
+      </div> */}
       <div className={isActiveModalMenu ? 'navAllModal active--navAllModal' : 'navAllModal'} ref={navAllModal}>
         <button className='btn-close-modal-menu' onClick={closeMenuAll}>
           <FaTimes />
