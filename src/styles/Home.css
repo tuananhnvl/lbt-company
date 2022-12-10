@@ -5,6 +5,7 @@ p {
     color:white;
     
 }
+
 .container{
     display: flex;
     align-items: flex-start;
@@ -365,6 +366,27 @@ p {
 
     padding-bottom: 7rem;
 }
+.grid-wrapper-heading {
+    position:relative;
+    gap: 0px 0px; 
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    padding: 10vh 0 17vh 0;
+}
+.grid-wrapper-heading div.heading-custom {
+    width:100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: fit-content;
+    border-top: 1px solid var(--color-line-bg);
+    border-bottom: 1px solid var(--color-line-bg);
+}
+.heading-custom h2 {
+    color:white;
+    font-size:70px;
+    font-style:italic;
+    text-align:center;
+}
 .wraper-welcome-section {
     height: 80vh!important;
     padding-bottom: 12.5vw!important;
@@ -605,11 +627,12 @@ p {
 }
 .mission-section-content {
     position:absolute;
-    width:66.666%;
+    width:83.333%;
     height:200px;
     background:rgb(30 30 30 / 75%);
     bottom:0;
     left:0;
     padding: 2rem;
     color:white;
+    box-shadow: inset 1px 1px 12px 12px #1e1e1e;
 }

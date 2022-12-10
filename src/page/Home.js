@@ -16,7 +16,7 @@ import img12 from '../asset/demo-img/12.png'
 
 import Navbar from ".././component/Navbar";
 import Footer from ".././component/Footer";
-import SliderPartners from ".././component/SliderPartners";
+import SliderProduct from "../component/SliderProduct";
 import GetInTouch from ".././component/GetInTouch";
 
 import partnerImage01 from '../asset/demo-img/bertonvineyaed-partners.jpg'
@@ -33,53 +33,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
   const ref = useRef(null);
-  const [preloader, setPreload] = useState(true);
 
 
-  useLocoScroll(!preloader);
-
-  // Run FC after loader end (preloader = false )
-  useEffect(() => {
-    if (!preloader && ref) {
-      if (typeof window === "undefined" || !window.document) {
-        return;
-      }
-    }
-
-    AnimationDom()
-
-  }, [preloader]);
-
-
-  const [timer, setTimer] = useState(0);
-
-  const id = useRef(null);
-
-  const clear = () => {
-    window.clearInterval(id.current);
-    setPreload(false);
-  };
+  useLocoScroll(true);
 
   useEffect(() => {
-    id.current = window.setInterval(() => {
-      setTimer((time) => time - 1);
-    }, 1000);
-    return () => clear();
-  }, []);
-
-  useEffect(() => {
-    if (timer === 0) {
-      clear();
-    }
-  }, [timer]);
-
-  if (typeof window === "undefined" || !window.document) {
-    return null;
-  }
-
-
-  //Animation
-  function AnimationDom() {
     gsap.to("#text01BannerChildren,#text02BannerChildren", {
       delay: 2, // trừ cho <Navbar/> action
       duration: 1,
@@ -95,9 +53,7 @@ function Home() {
       webkitClipPath:'inset(0% 0% 0% 0%)',
       ease: "power2"
     })
-
-  }
-
+  });
 
 
   /*
@@ -151,9 +107,7 @@ function Home() {
 
   return (
     <>
-      {preloader ? (
-        <div className='loader-wrapper'>LBT Imports Pty Ltd</div>
-      ) : (
+      
 
         <div className='main-container-all' id='main-container-all' data-scroll-container
           ref={ref}>
@@ -171,7 +125,7 @@ function Home() {
             </div>
           </div>
         
-          <div className='grid-wrapper wraper-mission-section' data-scroll-section>
+          <div className='grid-wrapper wraper-mission-section' data-scroll-section style={{marginTop:'5vw'}}>
             <div className='mission-section' style={{ backgroundImage: `url(${img12})`, backgroundSize: "cover" }}>
               <div className='mission-section-content'>
                 Our mission is to continue our growth and provide our clients with a diverse range of excellent quality products and to assist small to medium boutique wineries export branded wine
@@ -180,7 +134,7 @@ function Home() {
             <div className='text-skew skew-misson-text'>
               <h3 data-scroll>Mission</h3>
             </div>
-            <h1 className='innershadowtext' id='innershadowtext'>LBT</h1>
+
           </div>
 
 
@@ -196,10 +150,15 @@ function Home() {
             </div> */}
           </div>
 
-
+          <div className='grid-wrapper-heading' data-scroll-section>
+            <div className='heading-custom'>
+              <h2>Partner Brands</h2>
+            </div>
+              
+          </div>
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
     
-            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage01bg})`, backgroundSize: "cover" }}>
+            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage01bg})`, backgroundSize: "100% auto",backgroundPosition: "center" }}>
 
               {/* <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
@@ -207,7 +166,7 @@ function Home() {
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage01} alt='' />
               </div>
-              <SliderPartners nameBrand={'Berton'}/>
+              <SliderProduct nameBrand={'Berton'}/>
               <div className='partner-itemgird--detailcompany'>
                 <h3>Berton Vineyard</h3>
                 <p>Pettavel boasts historic roots dating back to 1842 when David Pettavel, the fourth generation of Swiss, pioneered professional viticulture in Victoria, Australia. Now with three vineyards under the brand, Pettavel has become a well-known brand as one of Australia's leading national banquet wine suppliers.</p>
@@ -220,7 +179,7 @@ function Home() {
             </div>
           </div>
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
-            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage02bg})`, backgroundSize: "cover" }}>
+            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage02bg})`, backgroundSize: "100% auto",backgroundPosition: "center" }}>
 
               {/* <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
@@ -228,7 +187,7 @@ function Home() {
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage02} alt='' />
               </div>
-              <SliderPartners nameBrand={'Dominic'}/>
+              <SliderProduct nameBrand={'Dominic'}/>
               <div className='partner-itemgird--detailcompany'>
                 <h3>Dominic Wines</h3>
 
@@ -243,7 +202,7 @@ function Home() {
           </div>
       
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
-            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage05bg})`, backgroundSize: "cover" }}>
+            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage05bg})`, backgroundSize: "100% auto",backgroundPosition: "center" }}>
 
              {/*  <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
@@ -251,7 +210,7 @@ function Home() {
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage05} alt='' />
               </div>
-              <SliderPartners nameBrand={'Ulupna'}/>
+              <SliderProduct nameBrand={'Ulupna'}/>
               <div className='partner-itemgird--detailcompany'>
                 <h3>Ulupna Wines</h3>
 
@@ -264,13 +223,14 @@ function Home() {
             <div className='text-skew skew-name-partners'>
               <h3 data-scroll>Ulupna&nbsp;Wines</h3>
             </div>
+            <h1 className='innershadowtext' id='innershadowtext'>LBT</h1>
           </div>
           
          
           <GetInTouch/>
           <Footer />
         </div>
-      )}
+   
 
 
 

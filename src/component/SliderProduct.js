@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import '../styles/Slider.css'
-import imagesList from '.././component/ListImagesProduct'
+import imagesList from './ListImagesProduct'
 
 import {FaAngleRight,FaAngleLeft} from 'react-icons/fa'
 
