@@ -1,0 +1,103 @@
+
+.section-getintouch {
+   display:flex;
+}
+
+.formcontact-getintouch,.text-getintouch{
+    position:relative;
+    cursor:pointer;
+}
+.text-getintouch{
+    grid-column-start: 3;
+    grid-column-end: 7;
+ }
+ .text-getintouch h2 {
+    text-align:center;
+    font-size:2rem;
+    color:white;
+ }
+ .text-getintouch p {
+    font-size:1rem;
+    font-style:italic;
+    text-align:center;
+    margin:0 20px 20px 20px;
+ }
+ .formcontact-getintouch {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 8;
+ }
+ .formcontact-getintouch form {
+    width:100%;
+    height:fit-content;
+ }
+ .formcontact-getintouch form > * {
+    background-color:rgb(30,30,30,.75);
+    transition:background-color 200ms ease-in-out;
+    color:white;
+    font-weight:bold;
+ }
+ .formcontact-getintouch form  input:focus,.formcontact-getintouch form  textarea:focus {
+    background-color:rgb(255 255 255 / 16%);
+    outline:0;
+    transition:background-color 500ms ease-out;
+ }
+ .formcontact-getintouch form  input:nth-child(n){
+    width: 25vw;
+    height: 6.25vw;
+    border-top:1px solid var(--color-line-bg);
+    border-bottom:1px solid var(--color-line-bg);
+    border-left:none !important;
+    border-right:none !important;
+ }
+ .formcontact-getintouch form  textarea {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    width:100%;
+    min-height:200px;
+    border-bottom:1px solid var(--color-line-bg);
+    padding: 20px 20px 0 20px;
+    border-top:none !important;
+    border-left:none !important;
+    border-right:none !important;
+ }
+ .formcontact-getintouch > button {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: block;
+    background-color: rgb(30,30,30,.75);
+    width: 25vw;
+    border-left: none !important;
+    border-right: none !important;
+    height: 6.25vw;
+    border-top: 1px solid var(--color-line-bg);
+    margin: 50px auto 0 auto;
+    border-bottom: 1px solid var(--color-line-bg);
+    font-size: 1.4rem;
+    color: white;
+   
+ }
+ 
+
+ .formcontact-getintouch form  input::-webkit-input-placeholder { /* Edge */
+    color: red;
+  }
+  
+  .formcontact-getintouch form  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+  
+  .formcontact-getintouch form  input::placeholder {
+    color: rgb(225,225,225,.5);
+    text-align:center;
+    font-style:italic;
+    
+  }
+  .formcontact-getintouch form  input[type="text" i] {
+    width:25vw;
+  }
+  .formcontact-getintouch form  input[type="text"] {
+   
+    margin: 0 auto;
+    text-align:center;
+  }

@@ -1,0 +1,237 @@
+
+  :root {
+    --color-line-bg:#363636;
+    --bgColor-main:#1E1E1E;
+    --z-index-btn-close-modalmenu :99999;
+    --height-item-partner: 567px;
+  } 
+  .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    height: 18.75vw;
+    position: relative;
+  }
+/* modalm menu config */
+  .navAllModal {
+    height:100vh;
+    top:0;
+    width:100%;
+    
+    position:fixed;
+    z-index:99999;
+    overflow:hidden;
+    /* lock */
+    visibility: hidden;
+    opacity: 0; 
+    
+  }
+  .active--navAllModal {
+    visibility: visible;
+    opacity:1; 
+  }
+  .navAllModal button.btn-close-modal-menu {
+    position:absolute;
+    top:0;
+    left:0;
+    margin: auto;
+    color:white;
+    background:unset;
+    font-size:50px;
+    line-height:65%;
+    border:none;
+    padding: 18px 0;
+    width:12.5vw;
+    height:100px;
+    z-index:var(--z-index-btn-close-modalmenu);
+    position:relative;
+  }
+  .navAllModal > div.navAllModal-display {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+     
+
+  }
+  .navAllModal > div.navAllModal-display div {
+    position: relative;
+    display: block;
+    width: 100vw;
+    background:rgb(30,30,30,1);
+  
+  }
+  .navAllModal > div.navAllModal-display div span {
+    content:"";
+    height:1px;
+    position:absolute;
+    background:var(--color-line-bg);
+    bottom:0;
+    left:0;
+    
+  }
+  .nav > .nav-header {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: block;
+    height: 12.5vw;
+  }
+  .nav > .nav-header a {
+    display:flex;
+    height:100%;
+  }
+  .nav > .nav-header a img {
+    padding: 0 20px;
+    height: auto;
+    width: 100%;
+    margin: auto auto 0 auto;
+  }
+  
+  .nav > .nav-btn {
+    grid-column: 1;
+    height: 12.5vw;
+    background: unset;
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #363636;
+    border-right: 1px solid #363636;
+    color: white;
+    z-index: 999;
+    position: relative;
+    grid-row: 1;
+  }
+  .nav > .nav-btn button.btn-open-modal-menu {
+    position:relative;
+    margin: auto;
+    color:white;
+    background:unset;
+    font-size:50px;
+    line-height:65%;
+    border:none;
+    padding: 18px 0;
+    width:100%;
+    height:100%;
+    animation-name: btnMenuHoverOut;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+ 
+
+  @keyframes btnMenuHoverOut {
+    from {background-color: gray;}
+    to {background-color: #1E1E1E;}
+  }
+
+  .nav > .nav-btn button:hover {
+    animation-name: btnMenuHover ;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    
+
+  }
+  @keyframes btnMenuHover {
+    0% {background-color: white;}
+    100% {background-color: rgb(128,128,128,0.5);}
+  }
+
+  .nav > .nav-links {
+    position: relative;
+    z-index: 9999;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    width: 100%;
+    top: 0;
+    height: 6.25vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: unset;
+    padding: unset;
+    border: unset;
+  }
+
+  .nav > .nav-links > div {
+    display:flex;
+    width:fit-content;
+ 
+    padding: 10px 20px;
+    color: #efefef;
+  }
+  .nav > .nav-links > div a {
+    text-decoration: none;
+    margin: auto;
+    font-size:1.2rem;
+    color:white;
+  }
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+ /*  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > button:hover,.nav  #nav-check:checked ~ .nav-btn > button {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > button > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+  
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  .nav-links {
+   
+  } */
+  .active-mobi {
+    animation-name: dropmobi;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes dropmobi {
+    from {height: 0}
+    to {height: 200px}
+  }
+  @keyframes closemobi {
+    from {height: 200px}
+    to {height: 0}
+  }
