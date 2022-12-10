@@ -46,9 +46,9 @@ export default function Navbar() {
 
   useEffect(() => {
     const listItemGrid = document.querySelector('.navAllModal-display').childNodes
-    console.log(listItemGrid)
+    //console.log(listItemGrid)
     const listGridArray = gsap.utils.toArray(listItemGrid)
-    console.log(listGridArray)
+   // console.log(listGridArray)
     for (let i = 0; i < 4; i++) {
       gsap.to(listItemGrid[i], {
         duration: 1,
@@ -139,7 +139,7 @@ export default function Navbar() {
       <div className='nav-links'>
         <div><Link to="/" id='itemMenu-text'>Home</Link></div>
         <div><Link to="/aboutus" id='itemMenu-text'>About us</Link></div>
-        <div><Link to="/partners" id='itemMenu-text'>Partner - Farm</Link></div>
+        <div><Link to="/partners" id='itemMenu-text'>Partner Brands</Link></div>
         {/* <div><Link to="/newfeed">Newfeed</Link></div> */}
         <div><Link to="/contact" id='itemMenu-text'>Contact</Link></div>
       </div>

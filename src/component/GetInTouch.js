@@ -14,8 +14,8 @@ export default function GetInTouch() {
             <input type="text" name="name" placeholder="Fill Name"/>
             <input type="text" name="contact" placeholder="Fill Phone"/>
             <input type="text" name="email" placeholder="Fill Email"/>
-            <textarea>
-              Message ...
+            <textarea defaultValue={'Message ...'}>
+              
             </textarea>
           </form>
           <button onClick={() => {console.log('Mail Send')}}>Contact Us</button>

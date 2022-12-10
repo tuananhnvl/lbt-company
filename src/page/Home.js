@@ -12,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img02 from '../asset/demo-img/02.jpg'
 import img15 from '../asset/demo-img/15.png'
 import img12 from '../asset/demo-img/12.png'
-import img17 from '../asset/demo-img/17.png'
+
 
 import Navbar from ".././component/Navbar";
 import Footer from ".././component/Footer";
@@ -180,6 +180,7 @@ function Home() {
             <div className='text-skew skew-misson-text'>
               <h3 data-scroll>Mission</h3>
             </div>
+            <h1 className='innershadowtext' id='innershadowtext'>LBT</h1>
           </div>
 
 
@@ -197,15 +198,16 @@ function Home() {
 
 
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
-          <h1 className='innershadowtext' id='innershadowtext'>LBT</h1>
+    
             <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage01bg})`, backgroundSize: "cover" }}>
 
-              <div className='partner-itemgird--item' id="img-partner-product">
+              {/* <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
-              </div>
+              </div> */}
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage01} alt='' />
               </div>
+              <SliderPartners nameBrand={'Berton'}/>
               <div className='partner-itemgird--detailcompany'>
                 <h3>Berton Vineyard</h3>
                 <p>Pettavel boasts historic roots dating back to 1842 when David Pettavel, the fourth generation of Swiss, pioneered professional viticulture in Victoria, Australia. Now with three vineyards under the brand, Pettavel has become a well-known brand as one of Australia's leading national banquet wine suppliers.</p>
@@ -220,12 +222,13 @@ function Home() {
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
             <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage02bg})`, backgroundSize: "cover" }}>
 
-              <div className='partner-itemgird--item' id="img-partner-product">
+              {/* <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
-              </div>
+              </div> */}
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage02} alt='' />
               </div>
+              <SliderPartners nameBrand={'Dominic'}/>
               <div className='partner-itemgird--detailcompany'>
                 <h3>Dominic Wines</h3>
 
@@ -242,16 +245,17 @@ function Home() {
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
             <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage05bg})`, backgroundSize: "cover" }}>
 
-              <div className='partner-itemgird--item' id="img-partner-product">
+             {/*  <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
-              </div>
+              </div> */}
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage05} alt='' />
               </div>
+              <SliderPartners nameBrand={'Ulupna'}/>
               <div className='partner-itemgird--detailcompany'>
                 <h3>Ulupna Wines</h3>
 
-                <p>Ulupna wines are SINGLE VINEYARD WINES produced with reverent respect of the environment, terroir, wine-making tradition, ancestry, present and future patrons, directed to rejoice at the contemplation of good life.
+                <p>
 
                   The Name Ulupna locates the vineyard, winery and cellar door. The name identifies the local Aboriginal clan of the Yorta Yorta tribe, and was also, historically, the name of the wider region that is Ulupna. Possessing a number of meanings, Ulupna most commonly translates as ‘strong women’.</p>
                   <Link to='./partners' >Explore more!</Link>
@@ -262,7 +266,7 @@ function Home() {
             </div>
           </div>
           
-          <SliderPartners/>
+         
           <GetInTouch/>
           <Footer />
         </div>
