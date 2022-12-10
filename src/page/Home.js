@@ -253,7 +253,7 @@ function Home() {
 
                 <p>Ulupna wines are SINGLE VINEYARD WINES produced with reverent respect of the environment, terroir, wine-making tradition, ancestry, present and future patrons, directed to rejoice at the contemplation of good life.
 
-                  The name Ulupna locates the vineyard, winery and cellar door. The name identifies the local Aboriginal clan of the Yorta Yorta tribe, and was also, historically, the name of the wider region that is Ulupna. Possessing a number of meanings, Ulupna most commonly translates as ‘strong women’.</p>
+                  The Name Ulupna locates the vineyard, winery and cellar door. The name identifies the local Aboriginal clan of the Yorta Yorta tribe, and was also, historically, the name of the wider region that is Ulupna. Possessing a number of meanings, Ulupna most commonly translates as ‘strong women’.</p>
                   <Link to='./partners' >Explore more!</Link>
               </div>
             </div>
@@ -261,9 +261,7 @@ function Home() {
               <h3 data-scroll>Ulupna&nbsp;Wines</h3>
             </div>
           </div>
-            <p>dfscdfgvg</p>
-            <p>dfscdfgvg</p>
-            <p>dfscdfgvg</p>
+          
           <SliderPartners/>
           <GetInTouch/>
           <Footer />
