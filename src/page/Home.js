@@ -261,7 +261,7 @@ function Home() {
               <h3 data-scroll>Ulupna&nbsp;Wines</h3>
             </div>
           </div>
-         
+            <p>dfg</p>
           <SliderPartners/>
           <GetInTouch/>
           <Footer />
