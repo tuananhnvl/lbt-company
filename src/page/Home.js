@@ -157,7 +157,7 @@ function Home() {
 
           <div className='grid-wrapper wraper-missionPrimary-section' data-scroll-section>
             <div className='missionPrimary-section'>
-              <img src={img02} alt='' data-scroll data-scroll-speed="-1" />
+              <img src={img02} alt='' data-scroll data-scroll-speed="-3" />
               <div className='missionPrimary-section-content'>
               In partnership with our suppliers to which we are their exclusive exporter and distributor, we seek to expand our exportation services and become a leading player in the Asian markets especially new young market with huge potentials such as that of Vietnam.
            

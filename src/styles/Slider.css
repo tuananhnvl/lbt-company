@@ -1,33 +1,40 @@
 
   .section-slider-img {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    width: 57.142%;
+  
+    width: 50%;
+    display: flex;
     position: relative;
   }
   .slideshow-section-slider-img {
     margin: auto;
-    width: 25vw;
-    height:580px;
-    grid-column-start: 3;
+    width: 12.5vw;
+    height: 530px;
     aspect-ratio: calc(9 / 16);
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-100%,-10%);
   }
   .section-slider-img button {
     padding: 0;
     font-size: 18px;
-    width: 6.25vw;
+    width: 12.5vw;
     height: 6.25vw;
-    border-radius: unset ;
+    border-radius: unset;
     /* aspect-ratio: 1; */
-    background-color: var(--bgColor-main);
-    border: 1px solid var(--color-line-bg);
+    display: block;
+    background: rgb(30,30,30);
+background: linear-gradient(0deg, rgba(30,30,30,1) 3%, rgba(30,30,30,1) 21%, rgba(30,30,30,0.577468487394958) 59%, rgba(30,30,30,0) 100%);
+    border-top: unset;
+    border-bottom: 1px solid var(--color-line-bg);
+    
+    border-image-slice: 1;
+    border-image-source: linear-gradient(0deg, rgba(54,54,54,1) 3%, rgba(54,54,54,1) 21%, rgba(54,54,54,0.5522584033613445) 48%, rgba(54,54,54,0) 100%);
     cursor: pointer;
     text-align: center;
     color: #f7f7f7;
+    position: absolute;
     z-index: 90;
-    position:absolute;
   }
   .section-slider-img button.nextButton svg,.section-slider-img button.prevButton svg {
     width: 50px;
@@ -43,19 +50,22 @@
     z-index:120;
   }
   .section-slider-img button:hover {
-    background-color: #24243e;
+    background-color: #1E1E1E;
   }
  
   .prevButton {
-    top: 50%;
-    transform: translateY(-50%);
-    left: 6.25vw;
+    bottom: 40px;
+    transform: translateY(100%);
+    right: calc(12.5vw - 2px);
+
+    border-right: unset !important;
   }
   
   .nextButton {
-    right: 6.25vw;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 0;
+    bottom: 40px;
+    border-left:unset !important;
+    transform: translateY(100%);
   }
   
   .slides {
