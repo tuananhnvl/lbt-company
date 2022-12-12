@@ -27,22 +27,27 @@
     grid-column-start: 2;
     grid-column-end: 8;
  }
- .formcontact-getintouch form {
+ .formcontact-getintouch form,.formcontact-getintouch form div  {
     width:100%;
     height:fit-content;
+    overflow: hidden;
  }
- .formcontact-getintouch form > * {
+ .formcontact-getintouch form div {
+
+    display: flex;
+ }
+ .formcontact-getintouch form > div > *,.formcontact-getintouch textarea  {
     background-color:rgb(30,30,30,.75);
     transition:background-color 200ms ease-in-out;
     color:white;
     font-weight:bold;
  }
- .formcontact-getintouch form  input:focus,.formcontact-getintouch form  textarea:focus {
+ .formcontact-getintouch form div input:focus,.formcontact-getintouch form  textarea:focus {
     background-color:rgb(255 255 255 / 16%);
     outline:0;
     transition:background-color 500ms ease-out;
  }
- .formcontact-getintouch form  input:nth-child(n){
+ .formcontact-getintouch form div input:nth-child(n){
     width: 25vw;
     height: 6.25vw;
     border-top:1px solid var(--color-line-bg);
@@ -54,6 +59,7 @@
     grid-column-start: 2;
     grid-column-end: 8;
     width:100%;
+    position:relative;
     min-height:200px;
     border-bottom:1px solid var(--color-line-bg);
     padding: 20px 20px 0 20px;
@@ -79,24 +85,28 @@
  }
  
 
- .formcontact-getintouch form  input::-webkit-input-placeholder { /* Edge */
-    color: red;
+ .formcontact-getintouch form div  input::-webkit-input-placeholder { /* Edge */
+   color: rgb(225,225,225,.5);
+   text-align:center;
+   font-style:italic;
   }
   
-  .formcontact-getintouch form  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
+  .formcontact-getintouch form div  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(225,225,225,.5);
+   text-align:center;
+   font-style:italic;
   }
   
-  .formcontact-getintouch form  input::placeholder {
+  .formcontact-getintouch form div  input::placeholder {
     color: rgb(225,225,225,.5);
     text-align:center;
     font-style:italic;
     
   }
-  .formcontact-getintouch form  input[type="text" i] {
+  .formcontact-getintouch form div  input[type="text" i] {
     width:25vw;
   }
-  .formcontact-getintouch form  input[type="text"] {
+  .formcontact-getintouch form div  input[type="text"] {
    
     margin: 0 auto;
     text-align:center;

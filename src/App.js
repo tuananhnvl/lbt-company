@@ -3,7 +3,7 @@ import Widget from './component/Widget'
 import GridCustom from './component/GridCustom'
 import './App.css'
 
-import './styles/bootstrap-grid.css'
+/* import './styles/bootstrap-grid.css' */
 
 import NavbarRouters from "./routers/NavbarRouters"
 

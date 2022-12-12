@@ -58,16 +58,16 @@ function GridCustom() {
         <div>
             <span></span>
         </div>
-        <div>
+        <div className='breakpoint-600'>
             <span></span>
         </div>
-        <div>
+        <div className='breakpoint-600'>
             <span></span>
         </div>
-        <div className='breakpoint-1000'>
+        <div className='breakpoint-1000 breakpoint-600'>
             <span></span>
         </div>
-        <div className='breakpoint-1000'>
+        <div className='breakpoint-1000 breakpoint-600'>
             <span></span>
         </div>
         

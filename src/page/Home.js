@@ -23,6 +23,7 @@ import partnerImage01 from '../asset/demo-img/bertonvineyaed-partners.jpg'
 import partnerImage01bg from '../asset/demo-img/bertonvineyaed-bg.jpg'
 import partnerImage02 from '../asset/demo-img/dominic-partners--full-color.png'
 import partnerImage02bg from '../asset/demo-img/dominic-bg.jpg'
+import partnerImage03bg from '../asset/Pettavel/pettavel-farm.jpg'
 import partnerImage03 from '../asset/demo-img/pettavel-partners.png'
 import partnerImage04 from '../asset/demo-img/organicwines-partners.jpg'
 import partnerImage05 from '../asset/demo-img/ulupna-partners.png'
@@ -167,7 +168,7 @@ function Home() {
             </div>
           </div>
 
-          <div className='grid-wrapper-heading' data-scroll-section>
+          <div className='grid-wrapper-heading' data-scroll-section >
             <div className='heading-custom'>
               <h2>Partner Brands</h2>
             </div>
@@ -175,7 +176,7 @@ function Home() {
           </div>
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
     
-            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage01bg})`, backgroundSize: "100% auto",backgroundPosition: "center" }}>
+            <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage03bg})`, backgroundSize: "130% auto",backgroundPosition: "0% 49%" }}>
 
               {/* <div className='partner-itemgird--item' id="img-partner-product">
                 <img src={img17} alt='' data-scroll />
@@ -183,16 +184,17 @@ function Home() {
               <div className='partner-itemgird--logo'>
                 <img src={partnerImage01} alt='' />
               </div>
-              <SliderProduct nameBrand={'Berton'}/>
+              <SliderProduct nameBrand={'Pettavel'}/>
               <div className='partner-itemgird--detailcompany'>
-                <h3>Berton Vineyard</h3>
-                <p>Pettavel boasts historic roots dating back to 1842 when David Pettavel, the fourth generation of Swiss, pioneered professional viticulture in Victoria, Australia. Now with three vineyards under the brand, Pettavel has become a well-known brand as one of Australia's leading national banquet wine suppliers.</p>
+                <h3>Pettavel Winery</h3>
+                <p>Pettavel boasts historic roots dating back to 1842 when David Pettavel, the fourth generation of Swiss, pioneered professional viticulture in Victoria, Australia. Now with three vineyards under the brand, Pettavel has become a well-known brand as one of Australia's leading national banquet wine suppliers.
+</p>
                 <Link to='./partners' >Explore more!</Link>
               </div>
             </div>
 
             <div className='text-skew skew-name-partners'>
-              <h3 data-scroll  >Berton&nbsp;Vineyard</h3>
+              <h3 data-scroll  data-scroll-repeat>Pettavel&nbsp;Winery</h3>
             </div>
           </div>
           <div className='grid-wrapper wraper-partner-section' data-scroll-section>
@@ -213,7 +215,7 @@ function Home() {
               </div>
             </div>
             <div className='text-skew skew-name-partners'>
-              <h3 data-scroll  >Dominic&nbsp;Wines</h3>
+              <h3 data-scroll  data-scroll-repeat>Dominic&nbsp;Wines</h3>
             </div>
             
           </div>
@@ -238,9 +240,9 @@ function Home() {
               </div>
             </div>
             <div className='text-skew skew-name-partners'>
-              <h3 data-scroll>Ulupna&nbsp;Wines</h3>
+              <h3 data-scroll data-scroll-repeat>Ulupna&nbsp;Wines</h3>
             </div>
-            <h1 className='innershadowtext' id='innershadowtext'>LBT</h1>
+            <h1 className='innershadowtext' id='innershadowtext' style={{display:'none'}}>LBT</h1>
           </div>
           
          

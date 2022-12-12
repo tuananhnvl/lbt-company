@@ -20,12 +20,12 @@
 .itemgrid-right-aboutus{  
     grid-column-start:5;
     grid-column-end:8;
-    width:100%;
+    max-width:100%;
     height:fit-content;
     
     position:relative;
 
-    padding: 2rem;
+    padding: 20px;
 }
 .itemgrid-left-aboutus > div {
     position: absolute;

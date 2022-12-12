@@ -11,6 +11,7 @@
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     height: 18.75vw;
     position: relative;
+    z-index: 9999!important;
   }
 /* modalm menu config */
   .navAllModal {

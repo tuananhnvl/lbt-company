@@ -8,7 +8,7 @@
 }
 .itemgrid-left-partners,.itemgrid-right-partners {
     height:420px;
-    width:100%;
+    max-width:100%;
     padding: 0px 20px 20px 20px;
 }
 .itemgrid-left-partners>div,.itemgrid-right-partners>div {

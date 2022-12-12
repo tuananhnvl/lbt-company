@@ -31,6 +31,7 @@
     height:fit-content;
 }
 .footer-iframe {
+    grid-row: 1;
     grid-column-start:6;
     grid-column-end:8;
     padding:0 20px;

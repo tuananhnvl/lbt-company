@@ -13,6 +13,11 @@ html,body {
     padding:0;
     
 }
+.lock--dom {
+    display:none !important;
+    visibility: hidden!important;
+
+}
 .pointerEvent--disable {
     pointer-events: none !important;
 }
@@ -79,9 +84,9 @@ p {
     transition:1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
 }
 .skew-name-partners h3.is-reveal {
-    transition-delay: 1s;
-    transform: rotate(-90deg) translate(40%, -125%);
-    transition:1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
+
+    opacity:1;
+    transition: opacity 1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
 }
 #img-partner-product img{
     clip-path: inset(0% 0% 0% 100%);
@@ -91,15 +96,21 @@ p {
     transition:1s cubic-bezier(0.900, 0.020, 0.295, 1.100);
 }
 /* bearkpoint grid*/
+/* ----custom 1k2 */
+@media(max-width:1200px) {
+.nav-links {
+    grid-column-end: 6!important;
+}
+}
 @media(max-width:1000px) {
-
+    .nav {
+        height: fit-content !important;
+    }
     /* xử lý lại height của .partner-itemgird */
     .partner-itemgird {
         height:690px;
     }
-    .partner-itemgird--detailcompany {
-        top: 35vw !important;
-    }
+
     /* start */
     .grid-wrapper,.wrapper-all-custom-grid,.nav {
         grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666% !important;
@@ -114,13 +125,14 @@ p {
     .item-grid-content {
         grid-column-start: 4!important;
     grid-column-end: 7!important;
+    top: -25vw!important;
     }
     .nav > .nav-links {
         grid-column-start: 1!important;
         grid-column-end: 7!important;
 
         background-color: #1E1E1E!important;
-        padding: 20px 0!important;
+        padding:unset!important;
         justify-content: space-around!important;
         border-top: 1px solid var(--color-line-bg)!important;
         border-bottom: 1px solid var(--color-line-bg)!important;
@@ -130,7 +142,10 @@ p {
         padding: 0 !important;
     }
     .nav > .nav-header {
-        grid-column-start: 2!important;
+        grid-column-start:1!important;
+      
+            height: 16.666vw!important;
+        
     }
     .nav > .nav-btn {
         width: 16.666vw !important;
@@ -139,6 +154,9 @@ p {
     }
     .nav > .nav-links {
         height: 8.333vw!important;
+    }
+    .nav>.nav-header a img {
+        margin: auto 0 auto 0!important;
     }
     .mission-section {
         grid-column-start: 2!important;
@@ -164,19 +182,24 @@ p {
     }
     .partner-itemgird--logo {
 
-        padding-right: 20px!important;
-    width: 33.333vw!important;
-    height: 33.333vw !important;
+       
+        width: calc(33.333vw - 20px)!important;
+        height: calc(33.333vw - 20px) !important;
     left: 83.33% !important;
     }
+    .partner-itemgird--detailcompany h3,    .partner-itemgird--detailcompany p, .partner-itemgird--detailcompany a  {
+        margin: 1rem  0 1rem 20px !important;
+    }
+
     .partner-itemgird--detailcompany {
+        top: 40vw !important;
         left: 50%!important;
-        padding-right: 20px!important;
+        padding: 0!important;
         width:50% !important;
     }
     .tittle-section-partners {
         grid-column-start: 1!important;
-        margin-top:100px;
+        margin-top:50px;
     }
     .itemgrid-left-partners {
         grid-column-start: 1!important;
@@ -223,22 +246,208 @@ p {
         grid-column: 6!important;
       
     }
-    .itemgrid-left-aboutus {
-        grid-column-start: 1!important;
-        grid-column-end: 4!important;}
-        .itemgrid-right-aboutus {
-            grid-column-start: 4!important;
-            grid-column-end: 7!important;
-        }
+ 
 
+      
+        .skew-missionPrimary-text {
+            grid-row: 1;
+            grid-column-start: 1!important;
+            grid-column-end: 2!important;
+        }
+    .skew-vision-text {
+        grid-column-start: 1!important;
+        grid-column-end: 2!important;
+    }
+    .skew-vision-text h3 {
+    
+        transform:rotate(-90deg) translate(-110%, -125%) !important;
+    }
+    .vision-img-section {
+        grid-column-start: 2!important;
+        width: 33.333vw!important;
+        padding: 0 !important;
+    }
+    .vision-text-section {
+        grid-column-start: 4!important;
+    }
+
+    .itemgrid-left-aboutus {
+        /* display:none !important; */
+        position: absolute !important;
+        background-size: cover !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 7 !important;
+        box-shadow: inset 0 5px 12px 12px #1e1e1e !important;
+
+    }
+    .itemgrid-left-aboutus > div {
+        top: 18vh!important;
+        z-index:99!important;
+    }
+    .itemgrid-right-aboutus {
+        padding-top:30vh !important;
+        background: rgb(0,0,0,.5);
+        grid-column-start: 2!important;
+        grid-column-end: 6!important;
+
+    }
+    .itemgrid-left-partners, .itemgrid-right-partners {
+        padding: 0 !important;
+    }
+
+    .footer-logo {
+        grid-column-start: 1!important;
+        grid-column-end: 5!important;
+    }
+    .footer-menu {
+        grid-column-start: 5!important;
+        grid-column-end: 7!important;
+    }
+    .footer-iframe {
+        grid-row: 2!important;
+        grid-column-start: 1!important;
+        grid-column-end: 7!important;
+        padding: 0 !important;
+        margin: 30px auto!important;
+        width: 95%!important;
+    }
+    /* anime */
+    .skew-missionPrimary-text h3.is-reveal {
+        transform: rotate(-90deg) translate(-100%, -125%)!important;
+    }
 }
 @media(max-width:600px) {
-
+    .breakpoint-600 {
+        display:none !important;
+    }
  
     .grid-wrapper,.wrapper-all-custom-grid,.nav {
         grid-template-columns: 25% 25% 25% 25% !important;
+        overflow: hidden!important;
     }
- .item-grid-content {
-    grid-column-start:3!important;
- }
+    .item-grid-content {
+        grid-column-start:3!important;
+    }
+
+
+    /* nav */
+    .nav > .nav-header {
+        grid-column-start: 1!important;
+        grid-column-end: 3!important;
+        height: 25vw!important;
+    }
+    .nav > .nav-links {
+        height: 12.5vw!important;
+      
+    }
+    .nav > .nav-links > div a {
+        font-size:1rem !important;
+    }
+    /* hero section */
+    .item-grid-content {
+        grid-column-start: 2!important;
+        height: 80vh !important;
+        top: 0vw!important;
+
+    }
+    .custom01, .custom02 {
+        grid-column-end: 5!important;
+    }
+    /* welcome section */
+    .skew-misson-text h3 {
+        font-size: 55px!important;
+    }
+    .mission-section-content {
+        font-size: 1rem!important;
+    }
+    /* mission section */
+    .mission-section {
+        grid-column-start: 1!important;
+    }
+    .mission-section-content {
+        left: 25vw !important;
+        max-width:75vw !important;
+       width:unset !important;
+    }
+    /* vision section */
+    .skew-vision-text h3 {
+        font-size: 55px!important;
+    }
+    .vision-img-section {
+        grid-column-start: 1!important;
+        width: 50vw!important;
+        opacity: .4!important;
+    }
+    .vision-text-section {
+        grid-column-start: 2!important;
+        
+    }
+    .vision-text-section div p {
+        font-size: 1rem !important;
+    }
+    /* our brands section */
+    .missionPrimary-section-content {
+        padding: 1rem !important;
+        left: 25vw !important;
+        font-size: 1rem !important;
+        background: rgb(0 0 0 / 78%) !important;
+    }
+    /* get in touch */
+    .text-getintouch {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+    }
+    /* wigdet */
+    .widget {
+        display:none !important;
+    }
+    /* footer */
+    .footer-menu {
+        display:none !important;
+    }
+    .footer-logo img {
+
+        width: 80%!important;
+    }
+    /* About Us Page */
+    .section-aboutus {
+        height: fit-content !important;
+    }
+    .itemgrid-right-aboutus {
+        grid-column-start: 1!important;
+        padding-top: 25vh !important;
+    }
+    .itemgrid-right-aboutus div {
+        top: 15vh!important;
+    }
+    .itemgrid-left-aboutus {
+          
+    height: 90%!important;
+
+    }
+    /* contact section */
+    .formcontact-getintouch > button {
+        width: 50vw !important;
+        height: 12.5vw !important;
+    }
+    .formcontact-getintouch form input:nth-child(n) {
+  
+        height: 12.5vw!important;
+    }
+
+    /* Partners Page */
+    .itemgrid-left-partners {
+        grid-column-start: 1!important;
+        grid-column-end: 3!important;
+        height: 350px!important;
+    }
+    .itemgrid-right-partners{
+        grid-column-start: 3!important;
+        grid-column-end: 5!important;
+        height: 350px!important;
+    }
+    .tittle-section-partners {
+    
+        margin-top:20px;
+    }
 }

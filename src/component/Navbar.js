@@ -112,11 +112,11 @@ export default function Navbar() {
       <div className="nav-header">
         <Link to="/"><img id="navbar-logo-foranimation" src={LogoLBTCompany} alt="Logo LBT Company" /></Link>
       </div>
-   {/*    <div className="nav-btn">
+      <div className="nav-btn lock--dom">
         <button className='btn-open-modal-menu' onClick={openMenuAll}>
           <FaGripLines />
         </button>
-      </div> */}
+      </div>
       <div className={isActiveModalMenu ? 'navAllModal active--navAllModal' : 'navAllModal'} ref={navAllModal}>
         <button className='btn-close-modal-menu' onClick={closeMenuAll}>
           <FaTimes />

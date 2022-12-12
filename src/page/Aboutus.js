@@ -18,7 +18,7 @@ function Aboutus() {
     <>
       <div className='main-container-all' id='main-container-all' data-scroll-container>
         <Navbar />
-        <div className='grid-wrapper'  data-scroll-section>
+        <div className='grid-wrapper section-aboutus'  data-scroll-section>
           <div className='itemgrid-left-aboutus' style={{background:`url(${img20})`,backgroundSize: 'auto 120%'}}>
             <div>
             <img src={LogoLBTCompany} alt='' />
