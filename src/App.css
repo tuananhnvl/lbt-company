@@ -4,7 +4,7 @@
 }
 :root {
     --margin-section-partners-index : 5vw;
-    --margin-section-partners-detail-index : 17vw;
+    --margin-section-partners-detail-index : 18vw;
     --color-line-onfooter:  rgb(255 255 255 / 38%);
 }
 html,body {
@@ -231,7 +231,7 @@ p {
 
 
     .slideshow-section-slider-img {
-        width: 16.666vw!important;
+        width:33.333vw!important;
         height: 480px!important;
     }
     .section-slider-img button {
@@ -367,6 +367,18 @@ p {
     }
     .custom01, .custom02 {
         grid-column-end: 5!important;
+       
+        line-height: 130%!important;
+       
+    }
+    .custom01 {
+        font-size: .8rem!important;
+        top: 40vh!important;
+    }
+    .custom02 {
+        font-size: 1rem!important;
+        top: 50vh!important;
+        margin-top:1rem!important;
     }
     /* welcome section */
     .skew-misson-text h3 {

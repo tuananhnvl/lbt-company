@@ -389,7 +389,7 @@ p {
 }
 .wraper-welcome-section {
     height: 80vh!important;
-    padding-bottom: 12.5vw!important;
+    padding-bottom: 0vw!important;
 }
 .item-grid-content {
     grid-column-start: 6;
@@ -438,16 +438,17 @@ p {
     grid-column-end:5;
     top:30%;
    
-    font-size:1.5rem;
+   font-size: 1.2rem;
     line-height: 140%;
   
 }
-.custom01 p,.custom02 p  {
+.custom01 span,.custom02 span  {
     transform: translate(0,70px);
     opacity:0;
-
+    color:white;
+    display: block;
 }
-.custom02 p  {
+.custom02 span  {
     transform: translate(0,140px);
     opacity:0;
 }
@@ -610,12 +611,13 @@ p {
     text-align:left;
 }
 .partner-itemgird--detailcompany h3 {
-    font-size:1.7rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
     text-shadow: 1px 1px white, -1px -1px #444;
 }
 .partner-itemgird--detailcompany p {
     margin: 1rem 0;
+    text-shadow: #1e1e1e 2px 2px 2px;
 }
 .partner-itemgird--detailcompany a {
     display:block;

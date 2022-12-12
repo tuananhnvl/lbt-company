@@ -146,7 +146,7 @@
     top: 0;
     height: 6.25vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: unset;
     padding: unset;
     border: unset;

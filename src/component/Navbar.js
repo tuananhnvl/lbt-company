@@ -139,7 +139,7 @@ export default function Navbar() {
       <div className='nav-links'>
         <div><Link to="/" id='itemMenu-text'>Home</Link></div>
         <div><Link to="/aboutus" id='itemMenu-text'>About us</Link></div>
-        <div><Link to="/partners" id='itemMenu-text'>Partner Brands</Link></div>
+        <div><Link to="/partners" id='itemMenu-text'>Partner&nbsp;Brands</Link></div>
         {/* <div><Link to="/newfeed">Newfeed</Link></div> */}
         <div><Link to="/contact" id='itemMenu-text'>Contact</Link></div>
       </div>
