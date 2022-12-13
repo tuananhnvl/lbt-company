@@ -177,7 +177,7 @@ function Home() {
 
         <div className='grid-wrapper wraper-partner-section' data-scroll-section style={{ paddingTop: '12.5vw' }}>
 
-          <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage03bg})`, backgroundSize: "130% auto", backgroundPosition: "0% 49%" }}>
+          <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage03bg})`, backgroundSize: "cover", backgroundPosition: "0% 49%" }}>
 
 
             <div className='partner-itemgird--logo'>
@@ -197,7 +197,7 @@ function Home() {
           </div>
         </div>
         <div className='grid-wrapper wraper-partner-section' data-scroll-section>
-          <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage02bg})`, backgroundSize: "100% auto", backgroundPosition: "center" }}>
+          <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage02bg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
 
             <div className='partner-itemgird--logo'>
@@ -218,7 +218,7 @@ function Home() {
         </div>
 
         <div className='grid-wrapper wraper-partner-section' data-scroll-section>
-          <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage05bg})`, backgroundSize: "100% auto", backgroundPosition: "center" }}>
+          <div className='partner-itemgird' style={{ backgroundImage: `url(${partnerImage05bg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
 
             <div className='partner-itemgird--logo'>
