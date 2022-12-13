@@ -24,7 +24,7 @@ import partnerImage01bg from '../asset/demo-img/bertonvineyaed-bg.jpg'
 import partnerImage02 from '../asset/demo-img/dominic-partners--full-color.png'
 import partnerImage02bg from '../asset/demo-img/dominic-bg.jpg'
 import partnerImage03bg from '../asset/Pettavel/pettavel-farm.jpg'
-import partnerImage03 from '../asset/demo-img/pettavel-partners.png'
+import partnerImage03 from '../asset/Pettavel/pettavel.jpg'
 import partnerImage04 from '../asset/demo-img/organicwines-partners.jpg'
 import partnerImage05 from '../asset/demo-img/ulupna-partners.png'
 import partnerImage05bg from '../asset/demo-img/ulupna-bg.jpg'
@@ -181,7 +181,7 @@ function Home() {
 
 
             <div className='partner-itemgird--logo'>
-              <img src={partnerImage01} alt='' />
+              <img src={partnerImage03} alt='' />
             </div>
             <SliderProduct nameBrand={'Pettavel'} />
             <div className='partner-itemgird--detailcompany'>
