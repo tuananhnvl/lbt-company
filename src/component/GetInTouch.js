@@ -12,9 +12,9 @@ export default function GetInTouch() {
         <div className='formcontact-getintouch'>
           <form>
             <div>
-              <input type="text" name="name" placeholder="Fill Name"/>
-              <input type="text" name="contact" placeholder="Fill Phone"/>
-              <input type="text" name="email" placeholder="Fill Email"/>
+              <input type="text" name="name" placeholder="Name"/>
+              <input type="text" name="contact" placeholder="Phone"/>
+              <input type="text" name="email" placeholder="Email"/>
             </div>
             
             <textarea defaultValue={'Message ...'}>
