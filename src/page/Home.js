@@ -121,7 +121,7 @@ function Home() {
             <span id="text01BannerChildren">LBT Imports Pty Ltd is a Melbourne-based wine exporter, wholesaler, and agent.</span>
           </div>
           <div className='item-grid-content-text custom02'>
-            <span id="text02BannerChildren">Drawing on many years in fine wine business, founder Long Tran was convinced of the increasing popularity of Australian wines and established LBT Imports in 2019 to focus on introducing quality Australian wines to Vietnam, which is a new and upcoming market with lots of potential.
+            <span id="text02BannerChildren">Drawing on many years in fine wine business, founder Long Tran was convinced of the increasing popularity of Australian wines and established LBT Imports  to focus on introducing quality Australian wines to Vietnam, which is a new and upcoming market with lots of potential.
             </span>
           </div>
         </div>
