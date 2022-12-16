@@ -11,8 +11,7 @@ export default function Contact() {
     <div className='main-container-all' id='main-container-all' data-scroll-container>
       <Navbar />
       <GetInTouch />
-    
-      <Footer />
+ 
     </div>
 
     </>
