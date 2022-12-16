@@ -12,9 +12,14 @@ export default function Footer() {
               <p>ACN 635 911 983 / ABN 43 635 911 983</p>
               <p>58 Auburn Avenue, Sunshine North, VIC 3020, Australia</p>
               <p>© 2020 LBT Wines Services</p>
+              <div>
+                <p>Email: lbtimportsservices@gmail.com</p>
+                <p>Telephone/Tax: +61 400 526 893</p>
+              </div>
             </div>
             
         </div>
+      
         <div className='footer-menu'>
           <div><Link to="/">Home</Link></div>
           <div><Link to="/aboutus">About us</Link></div>

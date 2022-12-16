@@ -26,8 +26,8 @@ function Aboutus() {
           </div>
           <div className='itemgrid-right-aboutus'>
 
-            <h2>Who We Are</h2>
-            <p>Established in 2019. LBT Imports Pty Ltd is a Melbourne-based wine exporter, wholesaler, and agent.
+            <h2>WHO WE ARE</h2>
+            <p>LBT Imports Pty Ltd is a Melbourne-based wine exporter, wholesaler, and agent.
 
               Drawing on many years in fine wine business, we was convinced of the increasing popularity of Australian wines and established LBT Imports in 2019 to focus on introducing quality Australian wines to Asian Pacific including Indonesia, Thailand, Campodia, Viet Nam, Malaysia, Philippines, China, Japan, Taiwan and Korea, which is a new and upcoming market with lots of potential.
             </p>
